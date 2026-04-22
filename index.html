@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YayOrNay - Privacy Policy</title>
+    <style>
+        body { font-family: -apple-system, system-ui, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
+        h1 { font-size: 24px; }
+        h2 { font-size: 18px; margin-top: 28px; }
+        p { margin: 12px 0; }
+        ul { margin: 12px 0; padding-left: 24px; }
+        li { margin: 4px 0; }
+        .updated { color: #888; font-size: 14px; }
+        a { color: #1FA79A; }
+    </style>
+</head>
+<body>
+    <h1>YayOrNay - Privacy Policy</h1>
+    <p class="updated">Last updated: April 22, 2026</p>
+
+    <h2>Overview</h2>
+    <p>YayOrNay is a social polling app that lets you ask friends yes/no or this-or-that questions and vote on theirs. Your privacy matters to us. This policy explains what data we collect, how we use it, who we share it with, and what choices you have.</p>
+    <p><strong>Data controller:</strong> Cem Karabulut. Contact: <a href="mailto:cmkarabulut@gmail.com">cmkarabulut@gmail.com</a>.</p>
+
+    <h2>Data We Collect</h2>
+    <p><strong>Account information.</strong> When you sign in with Apple, Google, or email/password, we receive your email address and (with Apple or Google) your display name. You choose a username and, optionally, a profile photo during onboarding. These are stored in Firebase Authentication and Cloud Firestore.</p>
+    <p><strong>Questions, votes, and comments.</strong> Content you create — yes/no questions, this-or-that questions, attached photos, votes, comments, and @-mentions — is stored in Cloud Firestore and Cloud Storage. Private questions are visible only to the recipients you send them to. Public questions are visible to any signed-in YayOrNay user.</p>
+    <p><strong>Friend connections.</strong> Your friend list, pending friend requests, blocked users, and friend groups are stored so you can organize who you interact with.</p>
+    <p><strong>Push notification token.</strong> If you enable notifications, we store a device token issued by Apple Push Notification service and Firebase Cloud Messaging so we can deliver alerts. You can toggle individual notification categories (new question, new vote, new comment, mentions, friend requests, friend accepted) in Settings.</p>
+    <p><strong>Vote timestamps.</strong> When you vote on a question, we record a timestamp alongside your vote. This lets us produce aggregated usage analytics (e.g. how many votes happen per day).</p>
+    <p><strong>Moderation reports.</strong> If you report a question as inappropriate, we record which user reported which question so moderation doesn't double-count and the reported content can be reviewed.</p>
+    <p>We do <strong>not</strong> collect your location, contacts, health data, financial data, browsing history outside the app, or identifiers used for advertising.</p>
+
+    <h2>How We Use Your Data</h2>
+    <p>We use your data to:</p>
+    <ul>
+        <li>Authenticate your account.</li>
+        <li>Deliver core features: posting, voting, commenting, notifications, friend connections, the public feed, and moderation.</li>
+        <li>Send push notifications you've opted into, respecting per-category toggles.</li>
+        <li>Understand aggregate app usage in a privacy-respecting way — never tied back to an individual in any published form.</li>
+    </ul>
+    <p>We do <strong>not</strong> use your data for advertising, cross-app tracking, or profiling.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>We share data with the infrastructure providers we depend on to operate the app:</p>
+    <ul>
+        <li><strong>Google LLC (Firebase)</strong> processes authentication (Firebase Auth), database storage (Cloud Firestore), file storage (Cloud Storage), server logic (Cloud Functions), push notification routing (Firebase Cloud Messaging), and abuse prevention (Firebase App Check). See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
+        <li><strong>Apple Inc.</strong> processes Sign in with Apple and delivers push notifications via Apple Push Notification service. See <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+    </ul>
+    <p>Other YayOrNay users see the public parts of your profile (username, display name, optional photo) and whatever content you share with them. We do not sell your data or share it with advertisers or any third party not listed above.</p>
+
+    <h2>Where Your Data Is Stored</h2>
+    <p>Data is stored on Google Cloud infrastructure in regions Google assigns to your Firebase project (typically the United States or European Union). Google operates standard contractual clauses and a Data Processing Addendum for international transfers.</p>
+
+    <h2>How Long We Keep Your Data</h2>
+    <ul>
+        <li>While your account is active, we retain your profile and content so the app continues to work.</li>
+        <li>When you delete your account (Settings → Delete account), we remove your profile, questions, comments, votes, friend connections, photos, notification records, and authentication account within seven days.</li>
+        <li>Aggregated, anonymized analytics may be retained after deletion since they no longer identify you.</li>
+    </ul>
+
+    <h2>Your Rights</h2>
+    <p>You can:</p>
+    <ul>
+        <li><strong>Access</strong> the data we hold about you (email us for a copy).</li>
+        <li><strong>Correct</strong> your profile in-app (Profile → Edit).</li>
+        <li><strong>Delete</strong> your account and associated data in-app (Settings → Delete account).</li>
+        <li><strong>Export</strong> your data (email us for a portable copy).</li>
+        <li><strong>Object</strong> to specific processing or withdraw consent (email us).</li>
+    </ul>
+    <p>If you live in the <strong>European Economic Area, the United Kingdom, or Switzerland</strong>, you also have the right to lodge a complaint with your national data protection authority. Our lawful basis for processing is consent (for optional features like notifications) and performance of contract (for core app features you signed up for).</p>
+    <p>If you live in <strong>California</strong>, the CCPA grants you the right to know what we collect, to delete it, to correct it, and to non-discrimination for exercising your rights. We do not sell or share personal information for cross-context behavioral advertising, so no opt-out mechanism is required.</p>
+
+    <h2>Moderation and Safety</h2>
+    <p>You can block other users and report questions from within the app. Blocks hide the blocked user from your feeds and comments. Reports are reviewed, and questions that exceed a report threshold are automatically hidden from all users.</p>
+
+    <h2>Security</h2>
+    <ul>
+        <li>All data in transit uses TLS 1.2 or higher.</li>
+        <li>Passwords are hashed and managed by Firebase Authentication; we never see your plaintext password.</li>
+        <li>Backend access is protected by Firebase App Check (App Attest on iOS) and Firestore security rules that restrict reads and writes to the authenticated user.</li>
+        <li>We do not access your photo library beyond what you explicitly select via the system picker.</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>YayOrNay is not intended for children under 13, or under 16 in the European Economic Area. We do not knowingly collect data from children under those ages. If you believe a child has created an account, email us and we will delete it.</p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy to reflect changes in the app or in applicable law. The "Last updated" date above reflects the most recent change. Material changes will be announced in-app before they take effect.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy or want to exercise any of the rights above, email us at: <a href="mailto:cmkarabulut@gmail.com">cmkarabulut@gmail.com</a></p>
+</body>
+</html>
