@@ -17,17 +17,17 @@
 </head>
 <body>
     <h1>YayOrNay - Privacy Policy</h1>
-    <p class="updated">Last updated: April 26, 2026</p>
+    <p class="updated">Last updated: June 9, 2026</p>
 
     <h2>Overview</h2>
     <p>YayOrNay is a social polling app that lets you ask friends yes/no or this-or-that questions and vote on theirs. Your privacy matters to us. This policy explains what data we collect, how we use it, who we share it with, and what choices you have.</p>
     <p><strong>Data controller:</strong> Cem Karabulut. Contact: <a href="mailto:cmkarabulut@gmail.com">cmkarabulut@gmail.com</a>.</p>
 
     <h2>Data We Collect</h2>
-    <p><strong>Account information.</strong> When you sign in with Apple, Google, or email/password, we receive your email address and (with Apple or Google) your display name. You choose a username and, optionally, a profile photo during onboarding. These are stored in Firebase Authentication and Cloud Firestore.</p>
+    <p><strong>Account information.</strong> When you sign in — with Apple (iOS) or Google or email/password — we receive your email address and (with Apple or Google) your display name. You choose a username and, optionally, a profile photo during onboarding. These are stored in Firebase Authentication and Cloud Firestore.</p>
     <p><strong>Questions, votes, and comments.</strong> Content you create — yes/no questions, this-or-that questions, attached photos, votes, comments, and @-mentions — is stored in Cloud Firestore and Cloud Storage. Private questions are visible only to the recipients you send them to. Public questions are visible to any signed-in YayOrNay user.</p>
     <p><strong>Friend connections.</strong> Your friend list, pending friend requests, blocked users, and friend groups are stored so you can organize who you interact with.</p>
-    <p><strong>Push notification token.</strong> If you enable notifications, we store a device token issued by Apple Push Notification service and Firebase Cloud Messaging so we can deliver alerts. You can toggle individual notification categories (new question, new vote, new comment, mentions, friend requests, friend accepted) in Settings.</p>
+    <p><strong>Push notification token.</strong> If you enable notifications, we store a device token issued by your platform's push service (Apple Push Notification service on iOS, Firebase Cloud Messaging on Android) so we can deliver alerts. You can toggle individual notification categories (new question, new vote, new comment, mentions, friend requests, friend accepted) in Settings.</p>
     <p><strong>Vote timestamps.</strong> When you vote on a question, we record a timestamp alongside your vote. This lets us produce aggregated usage analytics (e.g. how many votes happen per day).</p>
     <p><strong>Analytics events.</strong> We log app interaction events — signups, posts, votes, skips, comments, friend actions, tab switches, and similar — along with your account ID. We use these events to measure feature adoption, identify bugs, and prioritize improvements. Events do not contain the text of your questions, your photos, or the contents of your posts — only the category of action and a small set of structured parameters (for example, the kind of question, whether it was public or to friends, and whether it had a photo). The data is processed via Firebase Analytics (linked to Google Analytics 4) and exported to BigQuery for our own analytical queries.</p>
     <p><strong>Moderation reports.</strong> If you report a question as inappropriate, we record which user reported which question so moderation doesn't double-count and the reported content can be reviewed.</p>
@@ -88,7 +88,7 @@
     <ul>
         <li>All data in transit uses TLS 1.2 or higher.</li>
         <li>Passwords are hashed and managed by Firebase Authentication; we never see your plaintext password.</li>
-        <li>Backend access is protected by Firebase App Check (App Attest on iOS) and Firestore security rules that restrict reads and writes to the authenticated user.</li>
+        <li>Backend access is protected by Firebase App Check (App Attest on iOS, Play Integrity on Android) and Firestore security rules that restrict reads and writes to the authenticated user.</li>
         <li>We do not access your photo library beyond what you explicitly select via the system picker.</li>
     </ul>
 
